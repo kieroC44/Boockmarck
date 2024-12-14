@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmark</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+   
+</head>
+<body class="bg-black" >
+    <section class=" ">
+
+<div class="container ">
+
+    <div class="title_section text-center py-5">
+
+        <h1 class="text-light">bookmarker</h1>
+        
+        <p class=" text-light user-select-none">............................................................................................................................</p>
+        </div>
+        
+        <!-- ______________________________________________________________________________________________________________ -->
+        
+        
+        <div class="body_section">
+
+<div class="mb-4 text-light">
+
+  <h2 class="text-center ">
+    <i class="fa-solid fa-bookmark"></i>
+    Bookmark your favorite sites
+    <i class="fa-solid fa-bookmark"></i>
+</h2>
+
+</div>
+
+        <form>
+            <div class="mb-4 text-light">
+              <label for="exampleInputEmail1" class="form-label"><i class="fa-solid fa-book-bookmark pe-2"></i>
+                "Site Name"</label>
+              <input oninput="allValidation( this , `msgName` )" type="email" class="form-control" id="siteName" aria-describedby="emailHelp" placeholder="Bookmark Name"></input>
+              <p id="msgName" class="alert alert-danger p-1 d-none">Error</p>
+            </div>
+            <div class="mb-4 text-light">
+              <label for="exampleInputEmail1" class="form-label"><i class="fa-solid fa-link pe-2"></i>
+                Site URL</label>
+              <input oninput="allValidation( this , `msgUrl` )" type="email" class="form-control" id="siteUrl" aria-describedby="emailHelp" placeholder="Website URL"></input>
+              <p id="msgUrl" class="alert alert-danger p-1 d-none">Error</p>
+            </div>
+          </form>
+
+
+          <div class="submit text-center"> 
+            <button onclick="addweb()"class="btn btn-danger px-5" id="submitBtn">Submit</button>
+        </div>
+        </div>
+        <p class="text-center text-light user-select-none">...............................................................................................................................</p>
+        <!-- ______________________________________________________________________________________________________________ -->
+        
+      
+ <table class="table mt-4 text-center bg-light">
+  <thead>
+    <tr><th class="text-capitalize">index</th>
+    <th class="text-capitalize">Website Name</th>
+    <th class="text-capitalize">Visit</th>
+    <th class="text-capitalize">Delete</th>
+  </tr></thead>
+  <tbody id="tableDate">
+      <!-- <tr>
+        <td></td>
+        <td></td>              
+        <td>
+          <button class="btn btn-visit" data-index="0">
+            <i class="fa-solid fa-eye pe-2"></i>Visit
+          </button>
+        </td>
+        <td>
+          <button class="btn btn-delete pe-2" data-index="0">
+            <i class="fa-solid fa-trash-can"></i>
+            Delete
+          </button>
+        </td>
+    </tr> -->
+    </tbody>
+</table>       
+        
+</div>
+
+
+
+    </section>
+   
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/index.js"></script>
+
+</body>
+</html>
